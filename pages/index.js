@@ -1,3 +1,4 @@
+
 import { Footer, Navbar } from '../components';
 import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
 
@@ -10,9 +11,9 @@ const Home = () => (
       <Explore />
     </div>
     <div className="relative">
-      <GetStarted />
+      {/* <GetStarted /> */}
       <div className="gradient-04 z-0" />
-      <WhatsNew />
+      {/* <WhatsNew /> */}
     </div>
     <World />
     <div className="relative">

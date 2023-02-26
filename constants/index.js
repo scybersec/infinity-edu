@@ -12,7 +12,7 @@ export const exploreWorlds = [
   {
     id: 'world-3',
     imgUrl: '/planet-03.png',
-    title: 'CompSci',
+    title: 'Chemistry',
   },
   {
     id: 'world-4',

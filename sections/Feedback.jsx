@@ -12,11 +12,11 @@ const Feedback = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
+      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-2`}
     >
       <motion.div
-        variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
+        variants={fadeIn('right', 'spring', 0.2, 1)}
+        className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-15 p-10 rounded-[10px] border-[1px] border-[#6A6A6A] relative"
       >
         <div className="feedback-gradient" />
         <div>
@@ -24,12 +24,12 @@ const Feedback = () => (
             Founders
           </h4>
           <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
-            Message from the creators of Infinity∞edu
+            Message from the creators of Infinity∞Edu
           </p>
         </div>
 
         <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, blanditiis est. Enim debitis quo, in amet nam magni fugiat nihil ab exercitationem molestiae deleniti laborum ea, iure ex, illo tempore!
+        Our team of passionate individuals decided to create an application to meet the diverse needs of learners on a global scale. At Infinity∞Edu, we aim to revolutionize the way people learn by curating the ultimate educational experience.
         </p>
       </motion.div>
 
@@ -40,20 +40,20 @@ const Feedback = () => (
         <img
           src="/planet-09.png"
           alt="planet-09"
-          className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
+          className="w-full lg:h-[700px] lg:w-[900px] h-auto min-h-[210px] object-cover rounded-[10px]"
         />
 
-        <motion.div
+        {/* <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
-          <img
+          <motion.img
             src="/stamp.png"
             alt="stamp"
             className="w-[155px] h-[155px] object-contain"
           />
-        </motion.div>
-      </motion.div>
+        </motion.div> */}
+      </motion.div> 
     </motion.div>
   </section>
 );

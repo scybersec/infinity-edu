@@ -5,7 +5,19 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+}
+
+
+export const MyComponent = () => {
+  const [isOpen, setIsOpen] = useState(false)
+}
+
 const Navbar = () => (
+  
+  
   <motion.nav
     variants={navVariants}
     initial="hidden"
@@ -14,21 +26,15 @@ const Navbar = () => (
   >
     <div className="absolute w-[50%] inset-0 gradient-01" />
     <div
-      className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
+      className={`${styles.innerWidth} mx-auto flex justify-end gap-8`}
     >
-      
+
+
       
       <img
+        
         src="/menu.svg"
         alt="menu"
-        className="w-[24px] h-[24px] object-contain"
-      />
-      <h2 className="font-extrabold text-[50px] leading-[30.24px] text-white">
-        ∞
-      </h2>
-      <img
-        src="/search.svg"
-        alt="search"
         className="w-[24px] h-[24px] object-contain"
       />
     </div>
